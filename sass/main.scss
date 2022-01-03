@@ -1,0 +1,10 @@
+@import "./utils/variables";
+@import "./layouts/form";
+
+
+.header {
+  font-size: 3rem;
+  &__test {
+    color: blue;
+  }
+}

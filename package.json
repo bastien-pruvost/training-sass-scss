@@ -1,0 +1,19 @@
+{
+  "name": "training_sass_scss",
+  "version": "1.0.0",
+  "description": "Projet sur lequel je m'entraine a coder en utilisant le pré-procésseur Sass.\r J'apprends a maitriser les outils Sass suivants : variables, mixins, extensions, conditions, fonctions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dev-BastienPruvost/training_sass_scss.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dev-BastienPruvost/training_sass_scss/issues"
+  },
+  "homepage": "https://github.com/Dev-BastienPruvost/training_sass_scss#readme"
+}
