@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Baumans&family=Megrim&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  font-family: "Baumans", cursive;
+  color: #f3f0f0;
+  background: url("../../media/background.jpg") center/cover;
+  background-size: cover;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: #f3f0f0;
+}
+
+.header_title {
+  padding: 5px 0 0 10px;
+}
+.header_title h1 {
+  font-family: "Megrim", cursive;
+  font-size: 2.5rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin: 0;
+  padding-left: 10px;
+  color: #f3f0f0;
+  text-shadow: 1.5px 1.5px 0px #84c1ff, 3px 3px 0px #fa9e1e, 4px 4px 6px #f3f0f0;
+}
+.header_nav {
+  position: absolute;
+  top: 4px;
+  right: 10px;
+}
+.header_nav li {
+  display: inline;
+  padding: 0 15px;
+  border-left: 3px solid #f3f0f0;
+}
+.header_nav li:hover {
+  border: 2px solid #f3f0f0;
+  -webkit-transition: border 3s ease;
+  -o-transition: border 3s ease;
+  transition: border 3s ease;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3Nhc3MvbWFpbi5zY3NzIiwiLi4vc3R5bGUuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFRLDBGQUFBO0FBU1I7RUFDRSxTQUFBO0VBQ0EsVUFBQTtFQUNBLGFBQUE7RUFDQSxnQkFBQTtFQUNBLGtCQUFBO0VBQ0EsK0JBQUE7RUFDQSxjQWRNO0VBZU4sMERBQUE7RUFDQSxzQkFBQTtBQ1BGOztBRFNBO0VBQ0UsZ0JBQUE7QUNORjs7QURRQTtFQUNFLHFCQUFBO0FDTEY7QURPRTtFQUNFLGNBekJJO0FDb0JSOztBRGFFO0VBQ0UscUJBQUE7QUNWSjtBRFlJO0VBQ0UsOEJBQUE7RUFDQSxpQkFBQTtFQUNBLGdCQUFBO0VBQ0EseUJBQUE7RUFDQSxTQUFBO0VBQ0Esa0JBQUE7RUFDQSxjQTNDRTtFQTRDRiw4RUFBQTtBQ1ZOO0FEY0U7RUFDRSxrQkFBQTtFQUNBLFFBQUE7RUFDQSxXQUFBO0FDWko7QURjSTtFQUNFLGVBQUE7RUFDQSxlQUFBO0VBQ0EsOEJBQUE7QUNaTjtBRGNNO0VBQ0UseUJBQUE7RUFDQSxrQ0FBQTtFQUFBLDZCQUFBO0VBQUEsMEJBQUE7QUNaUiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
