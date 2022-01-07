@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Baumans&family=Megrim&display=swap");
 html {
   overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body {
@@ -9,7 +14,6 @@ body {
   height: 100vh;
   width: 100%;
   overflow: hidden;
-  box-sizing: border-box;
   position: relative;
   font-family: "Baumans", cursive;
   color: #FFF0FF;
@@ -49,16 +53,19 @@ header:before {
   padding: 10px 0 0 20px;
 }
 .header_title img {
-  height: 5rem;
+  height: 4rem;
+}
+.header_title a {
+  display: block;
 }
 .header_title h1 {
   font-family: "Megrim", cursive;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 100;
   text-transform: uppercase;
   margin: 0;
   color: #FFF0FF;
-  text-shadow: 1.5px 1.5px 1px #F28F79, 3px 3px 2px #A65398, 4px 4px 4px #FFF0FF;
+  text-shadow: 1.5px 1.5px 2px #A65398, 3px 3px 3px #F28F79, 4px 4px 5px #FFF0FF;
 }
 .header_nav {
   position: absolute;
@@ -74,7 +81,6 @@ header:before {
 .header_nav ul {
   display: flex;
   justify-content: space-between;
-  width: 300px;
   margin: 0 40px;
   padding: 0;
 }
@@ -87,6 +93,7 @@ header:before {
   border-top: 2px solid transparent;
   border-bottom: 2px solid transparent;
   transition: 0.2s ease-in-out;
+  margin: 0px 5px;
 }
 .header_nav li:hover {
   border-left: 2px solid #FFF0FF;
@@ -100,6 +107,8 @@ header:before {
 }
 .header_nav li a {
   padding: 4px 18px;
+  width: 120px;
+  text-align: center;
 }
 .header_line {
   width: 80%;
@@ -108,17 +117,18 @@ header:before {
   border-radius: 90%/100px 100px 0 0;
   border-color: #F28F79 transparent transparent transparent;
   position: absolute;
-  top: 162px;
+  top: 140px;
   margin: 0 50%;
   transform: translateX(-50%);
+  filter: drop-shadow(#FFF0FF 1px 1px 6px);
 }
 
 .carousel {
-  width: 25%;
+  width: 325px;
   border: 1px solid #FFF0FF;
-  margin: 80px auto 20px auto;
+  margin: 50px auto 20px auto;
   overflow: hidden;
-  box-shadow: 10px 10px 40px -15px #FFF0FF;
+  box-shadow: 4px 4px 35px -15px #FFF0FF;
 }
 .carousel_figure {
   position: relative;
@@ -126,10 +136,10 @@ header:before {
   margin: 0;
   padding: 0;
   font-size: 0;
-  animation: 10s sliders infinite;
+  animation: 20s sliders infinite;
 }
 .carousel_figure-pic {
-  width: 33.333%;
+  width: 33.333334%;
   height: auto;
   float: left;
 }
@@ -165,6 +175,132 @@ header:before {
   100% {
     left: 0%;
   }
+}
+.offers {
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.perspective {
+  width: 100%;
+  perspective: 800px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.perspective_3d {
+  width: 170px;
+  height: 250px;
+  box-shadow: 0 70px 63px -60px #FFF0FF;
+  transform-style: preserve-3d;
+  transition: transform 0.05s linear;
+  box-sizing: initial;
+}
+.perspective_3d_card {
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #FFF0FF;
+}
+.perspective_3d_card:after {
+  background: inherit;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 40px;
+  top: 40px;
+  width: 90%;
+  height: 85%;
+  z-index: -1;
+  filter: blur(45px);
+}
+.perspective_3d_card_info {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  padding-top: 40px;
+  background: black;
+  background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0.05) 100%);
+  border-radius: 0 0 10px 10px;
+}
+.perspective_3d_card_info h2 {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin: 10px 10px 2.5px 10px;
+  padding: 0;
+}
+.perspective_3d_card_info span {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 2.5px 10px 10px 10px;
+  padding: 0;
+  bottom: 0;
+}
+
+.button {
+  padding-top: 50px;
+  position: relative;
+  margin: auto;
+  width: 320px;
+}
+.button:hover .button_rect {
+  stroke-dasharray: 760;
+  stroke-dashoffset: 0;
+  stroke-width: 3px;
+}
+.button_rect {
+  fill: transparent;
+  stroke: #FFF0FF;
+  border-bottom: 1px solid #F28F79;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 6px;
+}
+.button_text {
+  position: relative;
+  text-align: center;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: 8px;
+  color: #FFF0FF;
+  top: -48px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+}
+
+.networks {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2rem;
+}
+.networks a {
+  margin: 0 10px;
+  transition: transform 0.25s ease-out;
+}
+.networks a:hover {
+  transform: scale(1.25);
+  text-shadow: #FFF0FF 0px 0px 30px, #A65398 0px 0px 20px, #A65398 0px 0px 75px;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+  transition: transform 0.25s ease-out;
+}
+.copyright a:hover {
+  transform: scale(1.1);
+  text-shadow: #FFF0FF 0px 0px 10px, #A65398 0px 0px 40px;
 }
 
 /*# sourceMappingURL=style.css.map */

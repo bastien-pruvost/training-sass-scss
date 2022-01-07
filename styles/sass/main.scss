@@ -8,8 +8,13 @@ $purple2: #130A26;
 $orange: #F28F79;
 
 // ########## GLOBAL CONFIG ##########
+
 html {
   overflow-x: hidden;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 body {
   margin: 0;
@@ -17,7 +22,6 @@ body {
   height: 100vh;
   width: 100%;
   overflow: hidden;
-  box-sizing: border-box;
   position: relative;
   font-family: "Baumans", cursive;
   color: $white;
@@ -34,11 +38,15 @@ a {
     color: $white;
   }
 }
+
 // ########## HEADER ##########
+
 header {
   position: relative;
   padding-bottom: 20px;
+
   // ########## HEADER GRADIENT ##########
+
   &:before {
     content: "";
     background: rgb(0,0,0);
@@ -49,26 +57,34 @@ header {
     z-index: 0;
   }
 }
+
   // ########## LOGO & TITLE ##########
+
 .header {
   &_title {
     position: relative;
     z-index: 1;
     padding: 10px 0 0 20px;
+    // width: fit-content;
     img {
-      height: 5rem;
+      height: 4rem;
+    }
+    a {
+      display: block;
     }
     h1 {
       font-family: "Megrim", cursive;
-      font-size: 2.5rem;
+      font-size: 2rem;
       font-weight: 100;
       text-transform: uppercase;
       margin: 0;
       color: $white;
-      text-shadow: 1.5px 1.5px 1px $orange, 3px 3px 2px $pink2, 4px 4px 4px $white;
+      text-shadow: 1.5px 1.5px 2px $pink2, 3px 3px 3px $orange, 4px 4px 5px $white;
     }
   }
+
     // ########## NAV BAR ##########
+
   &_nav {
     position: absolute;
     z-index: 1;
@@ -80,7 +96,7 @@ header {
     ul {
       display: flex;
       justify-content: space-between;
-      width: 300px;
+      // width: 300px;
       margin: 0 40px;
       padding: 0;
     }
@@ -93,6 +109,7 @@ header {
       border-top: 2px solid transparent;
       border-bottom: 2px solid transparent;
       transition: 0.2s ease-in-out;
+      margin: 0px 5px;
       &:hover {
         border-left: 2px solid $white;
         border-right: 2px solid $white;
@@ -105,10 +122,14 @@ header {
       }
       a {
         padding: 4px 18px;
+        width: 120px;
+        text-align: center;
       }
     }
   }
+
     // ########## HEADER SEPARATOR LINE ##########
+
   &_line {
     width: 80%;
     height: 100px;
@@ -116,19 +137,23 @@ header {
     border-radius: 90%/100px 100px 0 0;
     border-color: $orange transparent transparent transparent;
     position: absolute;
-    top: 162px;
+    top: 140px;
     margin: 0 50%;
     transform: translateX(-50%);
+    filter: drop-shadow($white 1px 1px 6px);
   }
 }
-  // ########## BODY ##########
+  // ############ BODY ############
+
+  // ########## CAROUSEL ##########
+
 .carousel {
-  width: 25%;
+  width: 325px;
   border: 1px solid $white;
   // border-radius: 10px;
-  margin: 80px auto 20px auto;
+  margin: 50px auto 20px auto;
   overflow: hidden;
-  box-shadow: 10px 10px 40px -15px $white;
+  box-shadow: 4px 4px 35px -15px $white;
   @media (max-width: 899px) {
     // display: none;
   }
@@ -138,10 +163,10 @@ header {
     margin: 0;
     padding: 0;
     font-size: 0;
-    animation: 10s sliders infinite;
+    animation: 20s sliders infinite;
 
     &-pic {
-      width: 33.333%;
+      width: 33.333334%;
       height: auto;
       float: left;
     }
@@ -159,3 +184,147 @@ header {
   89% {left: -200%;}
   100% {left: 0%;}
 }
+
+// ########## OFFERS ##########
+
+.offers {
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+}
+.perspective {
+  width: 100%;
+  perspective: 800px;
+  display: flex;
+  justify-content: space-evenly;
+  &_3d{
+    width: 170px;
+    height: 250px;
+    box-shadow: 0 70px 63px -60px $white;
+    transform-style: preserve-3d;
+    transition: transform 0.05s linear;
+    box-sizing: initial;
+    &_card {
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+      // border-radius: 10px;
+      border: 1px solid $white;
+      &:after {
+        background: inherit;
+        content: "";
+        display: block;
+        position: absolute;
+        left: 40px;
+        top: 40px;
+        width: 90%;
+        height: 85%;
+        z-index: -1;
+        filter: blur(45px);
+      }
+      &_info {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        padding-top: 40px;
+        background: rgb(0,0,0);
+        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.05) 100%);
+        border-radius: 0 0 10px 10px;
+        h2 {
+          display: inline-block;
+          font-size: 1.2rem;
+          font-weight: 100;
+          text-transform: uppercase;
+          margin: 10px 10px 2.5px 10px;
+          padding: 0;
+        }
+        span {
+          display: inline-block;
+          font-size: 1rem;
+          font-weight: 400;
+          margin: 2.5px 10px 10px 10px;
+          padding: 0;
+          bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+// ########## BUTTON GET STARTED ##########
+
+@mixin dash ($array, $offset, $width) {
+  stroke-dasharray: $array;
+  stroke-dashoffset: $offset;
+  stroke-width: $width;
+}
+
+.button {
+  padding-top: 50px;
+  position: relative;
+  margin: auto;
+  width: 320px;
+  &:hover
+    &_rect {
+      @include dash(760, 0, 3px)
+    }
+
+  &_rect {
+    fill: transparent;
+    stroke: $white;
+    border-bottom: 1px solid $orange;
+
+    transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+    @include dash(140 540, -474, 6px)
+  }
+  &_text {
+    position: relative;
+    text-align: center;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 8px;
+    color: $white;
+    top: -48px;
+
+  }
+}
+
+// ########## FOOTER - NETWORKS ##########
+
+footer {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+}
+.networks {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2rem;
+  a {
+    margin: 0 10px;
+    transition: transform 0.25s ease-out;
+    &:hover {
+      transform: scale(1.25);
+      text-shadow: $white 0px 0px 30px, $pink2 0px 0px 20px, $pink2 0px 0px 75px;
+    }
+  }
+}
+.copyright {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+  transition: transform 0.25s ease-out;
+  a {
+    &:hover {
+      transform: scale(1.1);
+      text-shadow: $white 0px 0px 10px, $pink2 0px 0px 40px;
+    }
+  }
+}
+
+
+// ########## BORDER DEV TOOL ##########
+
+// * {border: solid 1px red;}
