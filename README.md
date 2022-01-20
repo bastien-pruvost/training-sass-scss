@@ -7,7 +7,7 @@ I am learning to use variables and mixins
 All this in order to improve the maintainability and cleanliness of my future codes.  
   
   
-(FR)
+-FR-
   
 ## Projet d'entrainement sur sass / scss
   
