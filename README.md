@@ -1,17 +1,17 @@
 # Training sass - scss
   
-### - EN - 
+## - EN - 
   
-## Training project on sass / scss
+### Training project on sass / scss
   
 Project where I am practicing coding using the Sass preprocessor.  
 I am learning to use variables and mixins
 All this in order to improve the maintainability and cleanliness of my future codes.  
   
   
-### - FR - 
+## - FR - 
   
-## Projet d'entrainement sur sass / scss
+### Projet d'entrainement sur sass / scss
   
 Projet sur lequel je m'entraine a coder en utilisant le pré-procésseur Sass.  
 J'apprends a utiliser les variables et les mixins.
