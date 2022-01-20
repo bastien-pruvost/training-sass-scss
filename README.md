@@ -7,8 +7,6 @@ I am learning to use variables and mixins
 All this in order to improve the maintainability and cleanliness of my future codes.  
   
   
--FR-
-  
 ## Projet d'entrainement sur sass / scss
   
 Projet sur lequel je m'entraine a coder en utilisant le pré-procésseur Sass.  
