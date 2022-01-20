@@ -1,4 +1,4 @@
-# Training sass - scss
+# Training - sass / scss
   
 ## Training project on sass / scss
 Web project on the theme of Space, where I am practicing to code using the Sass preprocessor.  
