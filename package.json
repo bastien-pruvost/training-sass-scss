@@ -1,21 +1,21 @@
 {
-  "name": "training_sass_scss",
+  "name": "training-sass-scss",
   "version": "1.0.0",
-  "description": "Projet sur lequel je m'entraine a coder en utilisant le pré-procésseur Sass.\r J'apprends a maitriser les outils Sass suivants : variables, mixins, extensions, conditions, fonctions.",
-  "main": "index.js",
+  "description": "Training project on sass preprocessor",
+  "main": "index.html",
   "scripts": {
     "sass": "sass --watch ./styles/sass/main.scss:./styles/css/style.css --style expanded",
     "prefix": "postcss ./styles/css/style.css --use autoprefixer -d ./styles/css/prefixed/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Dev-BastienPruvost/training_sass_scss.git"
+    "url": "git+https://github.com/Dev-BastienPruvost/training-sass-scss.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Dev-BastienPruvost/training_sass_scss/issues"
+    "url": "https://github.com/Dev-BastienPruvost/training-sass-scss/issues"
   },
-  "homepage": "https://github.com/Dev-BastienPruvost/training_sass_scss#readme",
+  "homepage": "https://github.com/Dev-BastienPruvost/training-sass-scss#readme",
   "browserslist": "last 4 versions"
 }

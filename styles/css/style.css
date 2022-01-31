@@ -285,22 +285,24 @@ footer {
 }
 .networks a {
   margin: 0 10px;
-  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, text-shadow 0.3s ease-out;
 }
 .networks a:hover {
   transform: scale(1.25);
-  text-shadow: #FFF0FF 0px 0px 30px, #A65398 0px 0px 20px, #A65398 0px 0px 75px;
+  text-shadow: #A65398 0px 0px 20px, #A65398 0px 0px 50px;
 }
 
 .copyright {
   display: flex;
   justify-content: space-around;
   margin: 20px 0;
-  transition: transform 0.25s ease-out;
+}
+.copyright a {
+  transition: transform 0.25s ease-out, text-shadow 0.3s ease-out;
 }
 .copyright a:hover {
-  transform: scale(1.1);
-  text-shadow: #FFF0FF 0px 0px 10px, #A65398 0px 0px 40px;
+  transform: scale(1.05);
+  text-shadow: #FFF0FF 0px 0px 50px, #A65398 0px 0px 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
