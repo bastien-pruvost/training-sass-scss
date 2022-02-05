@@ -1,4 +1,4 @@
-# Training - sass / scss
+# Training - sass / scss <a href="https://bonsai.pruvostbastien.fr/"><img src="https://img.shields.io/badge/click_here_to_see_the_website-202D3C?style=for-the-badge&logo=github&logoColor=white" /></a>
 
 ## Training project on sass / scss
 
