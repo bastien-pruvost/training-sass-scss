@@ -1,5 +1,5 @@
 # Training - sass / scss
-<a href="https://bonsai.pruvostbastien.fr/" target="_blank"><img src="https://img.shields.io/badge/ctrl_%2B_click_here_to_see_the_website-324050?style=for-the-badge&logo=github&logoColor=white" /></a>
+<a href="https://space.pruvostbastien.fr/" target="_blank"><img src="https://img.shields.io/badge/ctrl_%2B_click_here_to_see_the_website-324050?style=for-the-badge&logo=github&logoColor=white" /></a>
 
 ## Training project on sass / scss
 
