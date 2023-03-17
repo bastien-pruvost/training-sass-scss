@@ -19,8 +19,10 @@ Training project, coded with HTML and Sass / Scss
 
 ## About the project
 
-Web page on the theme of Space, to practice on Sass preprocessor.  
+Web page on the theme of Space, to practice on Sass preprocessor.
+
 I learned to use variables, mixins and some css animations.
+
 All this in order to improve the maintainability and cleanliness of my future codes.
 
 
