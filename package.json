@@ -1,7 +1,7 @@
 {
   "name": "training-sass-scss",
   "version": "1.0.0",
-  "description": "Training project on sass preprocessor",
+  "description": "Training project, coded with HTML and Sass / Scss",
   "main": "index.html",
   "scripts": {
     "sass": "sass --watch ./styles/sass/main.scss:./styles/css/style.css --style expanded",
